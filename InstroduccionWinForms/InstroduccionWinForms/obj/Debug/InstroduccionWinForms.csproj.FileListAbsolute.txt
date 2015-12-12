@@ -1,0 +1,10 @@
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\bin\Debug\InstroduccionWinForms.exe.config
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\bin\Debug\InstroduccionWinForms.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\bin\Debug\InstroduccionWinForms.pdb
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.csprojResolveAssemblyReference.cache
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.Intro.resources
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.Properties.Resources.resources
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.csproj.GenerateResource.Cache
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.pdb
+c:\users\capacitaciones\documents\visual studio 2013\Projects\InstroduccionWinForms\InstroduccionWinForms\obj\Debug\InstroduccionWinForms.Form1.resources

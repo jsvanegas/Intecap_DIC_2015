@@ -1,0 +1,11 @@
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\bin\Debug\Agenda.exe.config
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\bin\Debug\Agenda.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\bin\Debug\Agenda.pdb
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.csprojResolveAssemblyReference.cache
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.Main.resources
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.Properties.Resources.resources
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.csproj.GenerateResource.Cache
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.pdb
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.FrmRegistrar.resources
+c:\users\capacitaciones\documents\visual studio 2013\Projects\Agenda\Agenda\obj\Debug\Agenda.FrmConsultar.resources

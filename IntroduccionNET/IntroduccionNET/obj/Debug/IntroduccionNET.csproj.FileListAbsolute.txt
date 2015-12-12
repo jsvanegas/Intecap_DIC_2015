@@ -1,0 +1,9 @@
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\bin\Debug\IntroduccionNET.exe.config
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\bin\Debug\IntroduccionNET.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\bin\Debug\IntroduccionNET.pdb
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\obj\Debug\IntroduccionNET.csprojResolveAssemblyReference.cache
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\obj\Debug\IntroduccionNET.exe
+c:\users\capacitaciones\documents\visual studio 2013\Projects\IntroduccionNET\IntroduccionNET\obj\Debug\IntroduccionNET.pdb
+C:\Users\capacitaciones\Documents\Repositorios\Intecap_DIC_2015\IntroduccionNET\IntroduccionNET\bin\Debug\IntroduccionNET.exe.config
+C:\Users\capacitaciones\Documents\Repositorios\Intecap_DIC_2015\IntroduccionNET\IntroduccionNET\obj\Debug\IntroduccionNET.exe
+C:\Users\capacitaciones\Documents\Repositorios\Intecap_DIC_2015\IntroduccionNET\IntroduccionNET\obj\Debug\IntroduccionNET.pdb
