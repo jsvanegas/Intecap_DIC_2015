@@ -109,6 +109,10 @@ namespace IntroduccionADO
             lstCategorias.ValueMember = "CategoryID";
             lstCategorias.DataSource = td;
 
+            cmbCategorias.DisplayMember = "CategoryName";
+            cmbCategorias.ValueMember = "CategoryID";
+            cmbCategorias.DataSource = td;
+
         }
 
         private void lstCategorias_SelectedIndexChanged(object sender, EventArgs e)
@@ -152,6 +156,18 @@ namespace IntroduccionADO
             if (cmd.ExecuteNonQuery()>0)
             {
                 MessageBox.Show("Registro actualizado");
+                cargarListaCategorias();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(cmbCategorias.SelectedValue);
+            ValidarConexion();
+            string sql = "DELETE FROM Categories WHERE CategoryID=" + id;
+            if (new SqlCommand(sql, cnn).ExecuteNonQuery()>0)
+            {
+                MessageBox.Show("Registros borrados");
                 cargarListaCategorias();
             }
         }

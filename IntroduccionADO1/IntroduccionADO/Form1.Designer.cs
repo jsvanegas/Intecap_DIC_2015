@@ -33,21 +33,25 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lstCategorias = new System.Windows.Forms.ListBox();
-            this.txtNombreActualizar = new System.Windows.Forms.TextBox();
-            this.txtDescripcionActualizar = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.txtDescripcionActualizar = new System.Windows.Forms.TextBox();
+            this.txtNombreActualizar = new System.Windows.Forms.TextBox();
+            this.lstCategorias = new System.Windows.Forms.ListBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.cmbCategorias = new System.Windows.Forms.ComboBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConectar
@@ -87,6 +91,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -102,37 +107,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(811, 326);
+            this.tabPage1.Size = new System.Drawing.Size(639, 326);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultar";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.btnGuardar);
-            this.tabPage2.Controls.Add(this.txtDescripcion);
-            this.tabPage2.Controls.Add(this.txtNombre);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(811, 326);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Insertar";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btnActualizar);
-            this.tabPage3.Controls.Add(this.txtDescripcionActualizar);
-            this.tabPage3.Controls.Add(this.txtNombreActualizar);
-            this.tabPage3.Controls.Add(this.lstCategorias);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(639, 326);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Actualizar";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -144,6 +122,19 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(799, 285);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnGuardar);
+            this.tabPage2.Controls.Add(this.txtDescripcion);
+            this.tabPage2.Controls.Add(this.txtNombre);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(639, 326);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Insertar";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
@@ -168,29 +159,19 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 7;
             // 
-            // lstCategorias
+            // tabPage3
             // 
-            this.lstCategorias.FormattingEnabled = true;
-            this.lstCategorias.Location = new System.Drawing.Point(7, 7);
-            this.lstCategorias.Name = "lstCategorias";
-            this.lstCategorias.Size = new System.Drawing.Size(185, 303);
-            this.lstCategorias.TabIndex = 0;
-            this.lstCategorias.SelectedIndexChanged += new System.EventHandler(this.lstCategorias_SelectedIndexChanged);
-            // 
-            // txtNombreActualizar
-            // 
-            this.txtNombreActualizar.Location = new System.Drawing.Point(199, 7);
-            this.txtNombreActualizar.Name = "txtNombreActualizar";
-            this.txtNombreActualizar.Size = new System.Drawing.Size(420, 20);
-            this.txtNombreActualizar.TabIndex = 1;
-            // 
-            // txtDescripcionActualizar
-            // 
-            this.txtDescripcionActualizar.Location = new System.Drawing.Point(199, 34);
-            this.txtDescripcionActualizar.Multiline = true;
-            this.txtDescripcionActualizar.Name = "txtDescripcionActualizar";
-            this.txtDescripcionActualizar.Size = new System.Drawing.Size(420, 129);
-            this.txtDescripcionActualizar.TabIndex = 2;
+            this.tabPage3.Controls.Add(this.btnActualizar);
+            this.tabPage3.Controls.Add(this.txtDescripcionActualizar);
+            this.tabPage3.Controls.Add(this.txtNombreActualizar);
+            this.tabPage3.Controls.Add(this.lstCategorias);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(639, 326);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Actualizar";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
@@ -202,6 +183,60 @@
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // txtDescripcionActualizar
+            // 
+            this.txtDescripcionActualizar.Location = new System.Drawing.Point(199, 34);
+            this.txtDescripcionActualizar.Multiline = true;
+            this.txtDescripcionActualizar.Name = "txtDescripcionActualizar";
+            this.txtDescripcionActualizar.Size = new System.Drawing.Size(420, 129);
+            this.txtDescripcionActualizar.TabIndex = 2;
+            // 
+            // txtNombreActualizar
+            // 
+            this.txtNombreActualizar.Location = new System.Drawing.Point(199, 7);
+            this.txtNombreActualizar.Name = "txtNombreActualizar";
+            this.txtNombreActualizar.Size = new System.Drawing.Size(420, 20);
+            this.txtNombreActualizar.TabIndex = 1;
+            // 
+            // lstCategorias
+            // 
+            this.lstCategorias.FormattingEnabled = true;
+            this.lstCategorias.Location = new System.Drawing.Point(7, 7);
+            this.lstCategorias.Name = "lstCategorias";
+            this.lstCategorias.Size = new System.Drawing.Size(185, 303);
+            this.lstCategorias.TabIndex = 0;
+            this.lstCategorias.SelectedIndexChanged += new System.EventHandler(this.lstCategorias_SelectedIndexChanged);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnEliminar);
+            this.tabPage4.Controls.Add(this.cmbCategorias);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(639, 326);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Eliminar";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // cmbCategorias
+            // 
+            this.cmbCategorias.FormattingEnabled = true;
+            this.cmbCategorias.Location = new System.Drawing.Point(6, 6);
+            this.cmbCategorias.Name = "cmbCategorias";
+            this.cmbCategorias.Size = new System.Drawing.Size(221, 21);
+            this.cmbCategorias.TabIndex = 0;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(7, 34);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,11 +247,12 @@
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -238,6 +274,9 @@
         private System.Windows.Forms.TextBox txtDescripcionActualizar;
         private System.Windows.Forms.TextBox txtNombreActualizar;
         private System.Windows.Forms.ListBox lstCategorias;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cmbCategorias;
     }
 }
 
