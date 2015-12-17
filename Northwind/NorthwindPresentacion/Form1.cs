@@ -34,5 +34,24 @@ namespace NorthwindPresentacion
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int resultado = new CategoryDelegado()
+                                    .insertar(txtNombre.Text, txtDescripcion.Text);
+                cargarTablaCategorias();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = new CategoryDelegado().consultar(txtFiltro.Text);
+        }
     }
 }

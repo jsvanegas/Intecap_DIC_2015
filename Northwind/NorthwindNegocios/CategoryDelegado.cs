@@ -37,11 +37,15 @@ namespace NorthwindNegocios
             }
         }
 
-        public List<CategoryVO> consultar() {
+        public List<CategoryVO> consultar(string filtro="") {
             try
             {
                 Conectar();
-                return dao.consultar();
+                if (filtro.Length==0)
+                {
+                    return dao.consultar();
+                }
+                return dao.consultar(filtro);
             }
             catch (Exception ex)
             {

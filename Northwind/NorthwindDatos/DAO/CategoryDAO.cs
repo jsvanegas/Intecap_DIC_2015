@@ -22,7 +22,7 @@ namespace NorthwindDatos.DAO
         public int insertar(CategoryVO vo) {
             try
             {
-                string sql = string.Format("INSERTO INTO Categories (CategoryName, Description) VALUES('{0}', '{1}')", vo.CategoryName, vo.Description);
+                string sql = string.Format("INSERT INTO Categories (CategoryName, Description) VALUES('{0}', '{1}')", vo.CategoryName, vo.Description);
                 cmd.CommandText = sql;
                 return cmd.ExecuteNonQuery();
             }
@@ -35,21 +35,40 @@ namespace NorthwindDatos.DAO
         public List<CategoryVO> consultar() {
             try
             {
-                List<CategoryVO> categorias = new List<CategoryVO>();
                 string sql = "SELECT * FROM Categories";
                 cmd.CommandText = sql;
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    categorias.Add(obtenerCategoria(reader));
-                }
-                return categorias;
+                return recorrerReaderCategorias(cmd);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
+
+        public List<CategoryVO> consultar(string filtro) {
+            try
+            {
+                string q = "SELECT * FROM Categories WHERE CategoryName LIKE '%{0}%' OR Description LIKE '%{0}%'";
+                cmd.CommandText = string.Format(q, filtro);
+                return recorrerReaderCategorias(cmd);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private List<CategoryVO> recorrerReaderCategorias(SqlCommand cmd)
+        {
+            List<CategoryVO> categorias = new List<CategoryVO>();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                categorias.Add(obtenerCategoria(reader));
+            }
+            return categorias;
+        }
+
 
         private CategoryVO obtenerCategoria(SqlDataReader reader)
         {
