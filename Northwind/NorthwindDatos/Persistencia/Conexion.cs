@@ -11,7 +11,7 @@ namespace NorthwindDatos.Persistencia
     {
         protected SqlConnection cnn;
 
-        private string servidor = "192.168.7.79";
+        private string servidor = @"JUANCHO\SQLEXPRESS";
         private string baseDatos = "Northwind";
         private string usuario = "IntecapNET";
         private string clave = "IntecapNET";
@@ -19,8 +19,8 @@ namespace NorthwindDatos.Persistencia
         public Conexion() {
             cnn = new SqlConnection(
                 string.Format(
-                   //"Data source={0};Initial Catalog={1};Integrated Security=true;"
-                    "Data source={0};Initial Catalog={1};User Id={2};Password={3}",
+                    "Data source={0};Initial Catalog={1};Integrated Security=true;",
+                //"Data source={0};Initial Catalog={1};User Id={2};Password={3}",
                     servidor, baseDatos, usuario, clave
                 )
             );

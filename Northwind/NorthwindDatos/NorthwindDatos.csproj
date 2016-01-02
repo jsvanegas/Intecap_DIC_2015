@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\CategoryDAO.cs" />
+    <Compile Include="DAO\ProductosDAO.cs" />
+    <Compile Include="DTO\TopProductosDTO.cs" />
     <Compile Include="Persistencia\Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VO\CategoryVO.cs" />
